@@ -12,7 +12,7 @@ print(bin(num1 & num2))
 #или
 print(bin(num1 | num2))
 #искл
-print(bin(num1 ^ num2)
+print(bin(num1 ^ num2))
 #сдвиг вправо
 print(bin(num1 << 2))
 #сдвиг влево

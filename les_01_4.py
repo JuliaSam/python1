@@ -14,10 +14,17 @@ number1 = random.randint(x, y)
 print('Случайное целое число: ' )
 print(number1)
 
+x = int(input('Введите нижнюю границу: '))
+y = int(input('Введите верхнюю границу: '))
 number2 = random.uniform(x, y)
 print('Случайное вещественное число: ' )
 print(number2)
 
-symbol = random.choice(['a', 'b', 'c', 'd', 'e', 'f'])
-print('Случайный символ: ' )
-print(symbol)
+x = input('Введите символ нижнюю границу: ').lower()
+y = input('Введите символ верхнюю границу: ').lower()
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n',
+            'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+start = alphabet.index(x)
+end = alphabet.index(y)
+symbol_index = random.randint(start, end)
+print('Случайный символ:', alphabet[symbol_index])
